@@ -1,0 +1,112 @@
+// 1. Birthday message
+fun main() {
+    println("Happy Birthday, Rover!")
+    
+    // Let's print a cake!
+    println("   ,,,,,   ")
+    println("   |||||   ")
+    println(" =========")
+    println("@@@@@@@@@@@")
+    println("{~@~@~@~@~}")
+    println("@@@@@@@@@@@")
+    
+    // This prints an empty line.
+    println("")
+
+    println("You are already 5!")
+    println("5 is the very best age to celebrate!")
+}
+
+// 2. use variables
+fun main() {
+  	val age = 5*365
+    println("Happy Birthday, Rover!")
+    println("   ,,,,,   ")
+    println("   |||||   ")
+    println(" =========")
+    println("@@@@@@@@@@@")
+    println("{~@~@~@~@~}")
+    println("@@@@@@@@@@@")
+    println("You are already ${age} days old!")
+	  println("${age} days old is the very best age to celebrate!")
+}
+
+// 3a. Print border
+fun main() {
+    printBorder()
+    println("Happy Birthday, Jhansi!")
+    printBorder()
+}
+
+fun printBorder() {
+    println("=======================")
+}
+
+// 3b. Print border using repeat
+fun main() {
+    printBorder()
+    println("Happy Birthday, Jhansi!")
+    printBorder()
+}
+
+fun printBorder() {
+    repeat(23) {
+        print("=")
+    }
+    println()
+}
+
+// 3c. Use argument
+fun main() {
+    val border = "%"
+    printBorder(border)
+    println("Happy Birthday, Jhansi!")
+    printBorder(border)
+}
+
+fun printBorder(border: String) {
+    repeat(23) {
+        print(border)
+    }
+    println()
+}
+
+4. creating a cake
+fun main() {
+    val age = 24
+    val layers = 5
+    printCakeCandles(age)
+    printCakeTop(age)
+    printCakeBottom(age, layers)
+}
+
+fun printCakeCandles(age: Int) {
+    print (" ")
+    repeat(age) {
+          print(",")
+    }    
+    println() // Print an empty line
+
+    print(" ") // Print the inset of the candles on the cake
+    repeat(age) {
+        print("|")
+    }    
+    println()
+}
+
+
+fun printCakeTop(age: Int) {
+    repeat(age + 2) {
+        print("=")
+    }
+    println()
+}
+
+fun printCakeBottom(age: Int, layers: Int) {
+    repeat(layers) {
+        repeat(age + 2) {
+            print("@")
+        }
+        println()
+    }    
+}
