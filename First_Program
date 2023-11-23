@@ -1,0 +1,16 @@
+// 1. Hello World!
+fun main() {
+    println("Hello World!")
+}
+
+// 2. Change to Happy Brithday
+fun main() {
+    println("Happy Birthday!")
+}
+
+// 3. Extend the program
+fun main() {
+    println("Happy Birthday!")
+    println("Jhansi")
+    println("You are 25!")
+}
